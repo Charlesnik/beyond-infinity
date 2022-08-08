@@ -113,7 +113,7 @@ img{
   content:"";
   position:relative;
   display:flex;
-  background:url(stars.png);
+  background:url(./stars.png);
   width:20vw;
   height:300px;
   right:50vw;
@@ -153,7 +153,7 @@ html::before{
   height:100vh;
   background:red;
   z-index:-10;
-  background:url(beyond-infinity/stars.jpg)
+  background:url(./stars.jpg)
 
 }
 body{
@@ -400,7 +400,7 @@ padding:2%
 }
 
 #t-id-1{
-  background:url(beyond-infinity/documentation.png);
+  background:url(./documentation.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -408,7 +408,7 @@ padding:2%
 }
 
 #t-id-2{
-  background:url(beyond-infinity/product.png);
+  background:url(./product.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -416,7 +416,7 @@ padding:2%
   
 }
 #t-id-4{
-  background:url(beyond-infinity/tribute.png);
+  background:url(./tribute.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
