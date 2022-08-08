@@ -392,7 +392,7 @@ padding:2%
   text-decoration:none
 }
 #t-id-3{
-  background:url(survey-form.png);
+  background:url(/survey-form.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -400,7 +400,7 @@ padding:2%
 }
 
 #t-id-1{
-  background:url(documentation.png);
+  background:url(/documentation.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -408,7 +408,7 @@ padding:2%
 }
 
 #t-id-2{
-  background:url(product.png);
+  background:url(/product.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -416,7 +416,7 @@ padding:2%
   
 }
 #t-id-4{
-  background:url(tribute.png);
+  background:url(/tribute.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
