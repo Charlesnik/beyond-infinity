@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  <meta />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+<link rel="stylesheet" href="styles.css"/> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js" integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.css" integrity="sha512-9zXaPiQP5XOvclSiaivSnq5z9ByePfWDOuCCmPSeDSyyBOHVCxw9yK4qbxIrnwAy9Y9doEaIdInZIFIk5nk0mA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+  $(document.html).ready(function() {
+     $("h1").addClass("animated flipIny")
+     
+    });
+   
+    
+  </script>
+  
+<script>
+  let z= function (a) {
+    let x=document.getElementById(a).style="visibility:visible !important"
+    return x
+  }
+
+  let v= function (a) {
+    let c=document.getElementById(a).style="top:90%;transition:all 2.5s ease-out"
+    return c
+  }
+
+  let k=function (a){
+let f=document.getElementById(a).style="top:70%;transition:all 2s";
+return f
+  }
+
+  let a= function () {
+    let b=document.getElementById("w-l").style="transform:translatez(55px); transition-property:transform; transition-duration:.s" 
+    return b
+  }
+  let c= function () {
+    let b=document.getElementById("w-r").style="transform:translatez(5px); transition-property:transform; transition-duration:.5s; transition-delay:.5s" 
+    return b
+  }
+</script>
+  </head>
+  <body id="bb" onload=a(),c(),z("welcome-section")>
+    <nav id="navbar">
+      <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#projects">Gallary</a></li>
+      <li>
+        <a href="#f-div">Contacts</a>
+      </li>
+        </ul>
+    </nav>
+    <div id="white"></div>
+<main>
+  <section onload=z("welcome-section") id="welcome-section">
+    
+      <h1>Welcome to my portfolio!</h1>
+      <div id="w-l"><h2>My Name is Charles<br> </h2></div>
+      
+      <div id="w-r">
+        <h2 id="r">I am a web developer</h2> 
+      </div>
+<img src="images/sun.png"/>
+<div id="me">
+<div id="us"></div></div>
+
+  </section>
+  <section id="projects">
+    <h3>Project Gallary</h3>
+    
+    <div onclick="location.href='#';" onmouseout=k("p-ta") onmouseover=v("p-ta") class="project-tile" id="t-id-1">
+      
+      <div href="" id="p-ta" class="p-t">
+      Python Documentation Page
+       <br>
+      <a href="#">View</a>
+      </div>
+    </div>
+    
+    <div onmouseout=k("p-tb") onmouseover=v("p-tb") class="project-tile" id="t-id-2">
+      <div class="p-t" id="p-tb">
+      Product Landing Page
+       <br>
+      <a href="#">View</a>
+      </div>
+    </div>
+    <div onmouseout=k("p-tc") onmouseover=v("p-tc") class="project-tile" id="t-id-3">
+      <div  id="p-tc"  class="p-t">
+      Medical Survey Form
+       <br>
+      <a href="#">View</a>
+      </div>
+    </div>
+    <div onmouseout=k("p-td") onmouseover=v("p-td")  class="project-tile" id="t-id-4">
+      <div  id="p-td"  class="p-t">
+      Tribute Page
+       <br>
+      <a href="#">View</a>
+      </div>
+    </div>
+    <section>
+  
+</main>
+
+<footer id="f">
+  <div id="f-div">
+    <h3>Like what you see? Let's Talk!</h3>
+  <p>Hit me up on:</p></div>
+  <br><br>
+  <div id="icons">
+    
+    <i class="fa fa-facebook" >Facebook</i>
+    <i class="fa fa-instagram">Instagram</i>
+    <i class="fa fa-twitter">Twitter</i>
+    <i class="fa fa-envelope">Mail</i>
+  </div>
+  
+  <p id="p">Check out my profile on:</p>
+  <div id="profile">
+    
+  <a class="profile-link" target="_blank" href="#">
+    <i class="fa fa-free-code-camp">freecodecamp</i>
+  </a>
+  <a class="profile-link"  target="_blank" href="#">
+  <i class="fa fa-GitHub">Git Hub</i></a>
+  <a class="profile-link"  target="_blank" href="#">
+  <i class="fa fa-linkedin">Linkedin</i></a>
+  </div>
+</footer>
+  </body>
+</html>
