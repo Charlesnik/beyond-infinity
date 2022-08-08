@@ -152,7 +152,7 @@ html::before{
   width:100vw;
   height:100vh;
   z-index:-10;
-  background:url(./m.png)
+  background:url(./stars.jpg)
 
 }
 body{
@@ -319,8 +319,8 @@ transform-style:preserve-3d;
  margin-bottom:-10px;
  outline:5px solid green;
  margin-left:10px;
- transition-delay:.4s
-
+ transition-delay:.4s;
+z-index:2
 
 }
 
