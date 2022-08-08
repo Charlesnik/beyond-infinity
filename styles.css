@@ -288,7 +288,7 @@ transform-style:preserve-3d;
 
 #projects{
   display:block;
-  z-index:-10;
+  z-index:0;
   position:absolute;
   top:100vh;
   height:auto;
