@@ -113,7 +113,7 @@ img{
   content:"";
   position:relative;
   display:flex;
-  background:url(./stars.png);
+  background:url(./space.png);
   width:20vw;
   height:300px;
   right:50vw;
@@ -133,7 +133,7 @@ img{
   
 }
 
- spce{
+ @keyframes space{
   100%{
       transform:rotate(10deg)
 
@@ -151,9 +151,8 @@ html::before{
   position:fixed;
   width:100vw;
   height:100vh;
-  background:red;
   z-index:-10;
-  background:url(./stars.jpg)
+  background:url(./m.png)
 
 }
 body{
@@ -400,7 +399,7 @@ padding:2%
 }
 
 #t-id-1{
-  background:url(./documentation.png);
+  background:url(./documentation-page.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -408,7 +407,7 @@ padding:2%
 }
 
 #t-id-2{
-  background:url(./product.png);
+  background:url(./product-landing-page.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -416,7 +415,7 @@ padding:2%
   
 }
 #t-id-4{
-  background:url(./tribute.png);
+  background:url(./tribute-page.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
