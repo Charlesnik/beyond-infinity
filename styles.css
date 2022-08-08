@@ -416,7 +416,7 @@ padding:2%
   
 }
 #t-id-4{
-  background:url(/tribute.png);
+  background:url("/tribute.png");
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
