@@ -282,9 +282,9 @@ nav a:hover{
   color:yellow;
  
   border:1px white solid;
-  transform:translate3d(0px, -3px, -10px) scalex(.9);
+  transform:translate3d(0px, -3px, -5px) scalex(.9);
   transition-property:transform;
-  transition-duration:.3s;
+  transition-duration:.53s;
   border-radius:10px
     
 
@@ -447,7 +447,7 @@ visibility:hidden;
 z-index:;
 margin-right:0vw;
 transform-origin:-100px;
-transition-duration:.3411s;
+transition-duration:.53411s;
 transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.68)
 
 
@@ -457,10 +457,10 @@ transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.68)
 
 .project-tile:nth-child(3):hover,.project-tile:nth-child(2):hover
  {
-   transform:rotatey(0deg) rotatex(0deg) translatey(-100px)translatez(100px) ;
+   transform:rotatey(0deg) rotatex(0deg) translatey(-100px)translatez(50px) ;
   transition-property:transform;
   transition-delay:unset;
-  transition-duration:.531s;
+  transition-duration:.8531s;
   transform-origin:-100px
   ;
   transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.68);
@@ -473,10 +473,10 @@ transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.68)
 }
 
 .project-tile:nth-child(4):hover,.project-tile:nth-child(5):hover{
-  transform:rotatey(0deg) rotatex(0deg) translatey(-250px) translatez(100px);
+  transform:rotatey(0deg) rotatex(0deg) translatey(-250px) translatez(50px);
   transition-property:transform;
   transition-delay:unset;
-  transition-duration:.5435s;
+  transition-duration:.85435s;
   transform-origin:-100px;
   transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.58);
     z-index:0;
