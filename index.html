@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html id="ht" lang="en">
   <head>
   <meta />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"/>
 
 <link rel="stylesheet" href="styles.css"/> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.2/sass.min.js" integrity="sha512-mA5b7w9mZvGLWgjIqp9KhWNzkkZ/H3gC4Ua6GOn9m/xl1UF4ghH8GsriKvAYxLsxoKvn6NdebW7kZ6iGB3CGSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -11,38 +11,16 @@
  
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.css" integrity="sha512-9zXaPiQP5XOvclSiaivSnq5z9ByePfWDOuCCmPSeDSyyBOHVCxw9yK4qbxIrnwAy9Y9doEaIdInZIFIk5nk0mA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
   
-  
-<script>
-  let z= function (a) {
-    let x=document.getElementById(a).style="visibility:visible !important"
-    return x
-  }
 
-  let j= function (a) {
-    let c=document.getElementById(a).style="top:90%;transition:all 2.5s ease-out"
-    return c
-  }
 
-  let u=function (a){
-let f=document.getElementById(a).style="top:70%;transition:all 2s";
-return f
-  }
-
-  let a= function () {
-    let b=document.getElementById("w-l").style="transform:translatez(55px); transition-property:transform; transition-duration:.s" 
-    return b
-  }
-  let c= function () {
-    let b=document.getElementById("w-r").style="transform:translatez(5px); transition-property:transform; transition-duration:.5s; transition-delay:.5s" 
-    return b
-  }
-</script>
   </head>
-  <body id="bb" onload=a(),c(),z("welcome-section")>
 
+  
+  <body id="bb" class="">
 
+<link rel="stylesheet" href="font-awesome.min.css"/>
+<link rel="stylesheet" href="animate.css"/>
   <script>
   $(document).ready(function() {
      $(".cc").addClass("animated rotateIn")
@@ -55,13 +33,21 @@ return f
 
     });
 
+ let y= document.getElementById("hh");
+     console.log("y")
+     y.addEventListiner("click", ()=>{
+        let y=document.createElement("li");
+       let h= document.getElementById("ht").style="background:red !important";
+console.log("kkkkkdkdkdkdk");
+return h 
+     })
       
   </script>
 
 
   <div id="sun-glow">
  <div id="container-space">
-<div class="cc"><div id="space-ship">
+<div class="cc rotateIn"><div id="space-ship">
 </div>
 
 </div>
@@ -71,19 +57,12 @@ return f
 <div class="back"><p>
 dgdkdkadakddaka</p></div>
 </div>
- <a href="#" id="sun-id"> <img id="sun" src="./sun.png" title="Scroll me!"/> </a>
+ <a href="#" id="sun-id"> <img id="sun" src="images/sun.png" title="Scroll me!"/> </a>
     <nav id="navbar">
       <ul class="fa-inverse">
       
-      <script>
-      let f=() => {
-        let y=document.createElement("div");
-        let oo=document.getElementById("bb").appendChild(y);
-        
-        return oo;
-        }
-        </script>
-      <li><a href="#" onmouseover= f() id="h">Home</a></li>
+    
+      <li><a href="#" id="hh">Home</a></li>
       <li><a href="#projects">Gallary</a></li>
       <li>
         <a href="#f-div">Contacts</a>
@@ -91,11 +70,12 @@ dgdkdkadakddaka</p></div>
         </ul>
     </nav>
     <div id="black"></div>
-<main>
+<main id="m">
+  
 
   <section onload=z("welcome-section") id="welcome-section">
     
-      <h1>Welcome to my portfolio!</h1>
+      <h1 id="h11">Welcome to my portfolio!</h1>
       <div id="w-l"><h2>My Name is Charles<br> </h2></div>
       
       <div id="w-r">
@@ -107,31 +87,31 @@ dgdkdkadakddaka</p></div>
   </section>
   <section id="projects">
     <h3>Project Gallary</h3>
-    
-    <div onclick="location.href='#';" onmouseout=k("p-ta") onmouseover=v("p-ta") class="project-tile" id="t-id-1">
+
+    <div onclick="location.href='#';" class="project-tile" id="t-id-1">
       
-      <div href="" id="p-ta" class="tile-label">
+      <div id="p-ta" class="tile-label">
       Python Documentation Page
        <br>
       <a href="#">View</a>
       </div>
     </div>
     
-    <div onmouseout=k("p-tb") onmouseover=v("p-tb") class="project-tile" id="t-id-2">
+    <div class="project-tile" id="t-id-2">
       <div class="tile-label" id="p-tb">
       Product Landing Page
        <br>
       <a href="#">View</a>
       </div>
     </div>
-    <div onmouseout=k("p-tc") onmouseover=v("p-") class="project-tile" id="t-id-3">
+    <div class="project-tile" id="t-id-3">
       <div  id="p-tc"  class="tile-label">
       Medical Survey Form
        <br>
       <a href="#">View</a>
       </div>
     </div>
-    <div onmouseout=k("p-td") onmouseover=v("p-td")  class="project-tile" id="t-id-4">
+    <div class="project-tile" id="t-id-4">
       <div  id="p-td"  class="tile-label">
       Tribute Page
        <br>
