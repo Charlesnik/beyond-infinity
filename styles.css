@@ -501,7 +501,7 @@ h3{
 }
 
 .project-tile:hover > .tile-label{
-transform:translatey(25%) translatex(20%) translatez(10px);
+transform:translatey(25%) translatex(35%) translatez(10px);
 transition-property:all;
 transition-duration:1s;
 
@@ -515,7 +515,7 @@ transition-duration:1s;
   margin:auto;
   position:absolute;
   top:80%;
-  left:25%;
+  left:35%;
   outline:2px solid black;
   transform-style:preserve-3d;
   transform: translatez(50px);
