@@ -192,7 +192,7 @@ background:;
   content:"";
   position:absolute;
   display:;
-  background:url(images/space.png);
+  background:url(./space.png);
  width:calc(25vw + 50px) !important;
  height:150px;
  right:25vw;
@@ -240,7 +240,7 @@ html::before{
   height:100vh;
   background:red;
   z-index:-100;
-  background:url(images/stars.jpg)
+  background:url(./stars.jpg)
 
 }
 html::-webkit-scrollbar{
@@ -536,7 +536,7 @@ filter:unset
   text-decoration:none
 }
 #t-id-3{
-  background:url(images/survey-form.png);
+  background:url(./survey-form.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -544,7 +544,7 @@ filter:unset
 }
 
 #t-id-1{
-  background:url(images/documentation-page.png);
+  background:url(./documentation-page.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -552,7 +552,7 @@ filter:unset
 }
 
 #t-id-2{
-  background:url(images/product-landing-page.png);
+  background:url(./product-landing-page.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -560,7 +560,7 @@ filter:unset
   
 }
 #t-id-4{
-  background:url(images/tribute-page.png);
+  background:url(./tribute-page.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
