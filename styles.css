@@ -7,6 +7,10 @@
 {
   h1{
 color: yellow  !important;
+
+}
+h3{
+  margin-bottom:50px !important
 }
 #welcome-section{
   height:  !important;
@@ -25,14 +29,14 @@ position:relative !important
 footer{
   top:0 !important;
   margin-top: 0 !important;
-  padding:  !important;
-  margin-bottom: 0 !important;
+  padding: !important;
+  margin-bottom: !important;
   margin-left: 0px !important;
   margin-right:0px !important;
   width:100% !important;
   font-size:20px;
   display:block;
-  height:100vh !important
+  height:100vw !important
 }
 #projects{
   top:0vh !important;
@@ -41,7 +45,7 @@ display: block;
   height: auto !important;
   margin: 0 !important;
   perspective: unset !important;
-   padding-bottom: 50px !important;
+   padding-bottom: 0px !important;
    perspective-origin:unset !important;
 
 }
@@ -63,11 +67,11 @@ main, html, body{
 }
 .project-tile{
   display: inline-block;
-  margin-top:15 !important;
-  margin-bottom: 100 !important;
+  margin-top:0px !important;
+  margin-bottom: 100px !important;
   margin-left:10 !important;
 margin-right:0 !important;
-transform:rotatey(360deg) !important;
+transform:rotatey(0deg) !important;
 perspective:unset !important;
 perspective-origin:unset !important;
 
@@ -78,7 +82,7 @@ perspective-origin:unset !important;
   display:block;
   margin:auto;
   position:relative !important;
-  top:15rem !important;
+  top:10rem !important;
   transform:unset !important
 }
 
@@ -102,10 +106,10 @@ perspective-origin:unset !important;
 #sun{
   display:block;
   position:absolute;
-  right:-110px;
-  top:-30px;
-max-width:35vw;
-height:;  
+  right:-100px;
+  top:-25px;
+max-width:calc(25vw + 50px);
+max-height:20vw;  
   border-radius:100%;
   z-index:110;
   transform:scale(1.);
@@ -117,7 +121,7 @@ height:;
 #sun-glow{
   position:absolute;
   display:block;
-  max-width:8vw !important;
+  max-width:5vw !important;
 max-height:9vw !important;
   background:;
   border-radius:50%;
@@ -127,7 +131,7 @@ max-height:9vw !important;
   animation-timing-function:linear;
   animation-iteration-count:infinite;
   animation-duration:15s;
-       box-shadow:-60px 10px 100px yellow, -15px 5px 90px rgba(250,10,10,.5);
+       box-shadow:-50px 10px 100px 2vw yellow, -10px 5px 90px 3vw rgba(250,10,10,.5);
 
   z-index:15;
   transform:rotatez(0deg)!important;
@@ -181,20 +185,21 @@ background:;
   height:110px;
   opacity:1 !important;
   right:10px;
-  animation-name:space
+  animation-name:space;
+  transform-origin:0px left
 }
 #space-ship{
   content:"";
   position:absolute;
   display:;
-  background:url(./space.png);
- width:25vw !important;
+  background:url(images/space.png);
+ width:calc(25vw + 50px) !important;
  height:150px;
- right:30vw;
+ right:25vw;
   background-repeat:no-repeat;
   background-size:100% 100%;
   z-index:1110 !important;
-  transform:scale(.5);
+  transform:scale(.3);
   border:1px  yellow
   
 
@@ -214,17 +219,13 @@ transform:rotatez(0deg) translatez(0vw)  !important;
 
 @keyframes glow{
   50%{
-     box-shadow:-59px 10px 100px yellow, 2px 30px 80px rgba(250,10,10,.5);
+     box-shadow:-59px 10px 100px 1vw yellow, 2px 30px 80px 1vw rgba(250,10,10,.5);
   }
   
 }
 
- @keyframes spb vce{
-  100%{
-         transform:rotate(360deg)
 
-  }
-}
+
 html{
 
 height:100vh;
@@ -239,7 +240,7 @@ html::before{
   height:100vh;
   background:red;
   z-index:-100;
-  background:url(./stars.jpg)
+  background:url(images/stars.jpg)
 
 }
 html::-webkit-scrollbar{
@@ -270,8 +271,8 @@ nav a{
   font-size:1rem;
   font-family:;
   transition-property:transform;
-  transition-duration:.3s;
-  transform:translatez(20px);
+  transition-duration:.53s;
+  transform:translatez(5px);
   transform-style:preserve-3d;
   z-index:10000
    
@@ -282,9 +283,9 @@ nav a:hover{
   color:yellow;
  
   border:1px white solid;
-  transform:translate3d(0px, -3px, -5px) scalex(.9);
+  transform:translate3d(0px, -3px, 0px) scalex(.9);
   transition-property:transform;
-  transition-duration:.53s;
+  transition-duration:.3s;
   border-radius:10px
     
 
@@ -329,7 +330,7 @@ li{
   visibility:visible;
   position:relative !important;
   width:100%;
-  height:100vh;
+  height:calc(100vh - (100vw/100));
   z-index:-10;
    background:;
    background-size:cover;
@@ -343,7 +344,7 @@ li{
 #sun-id:hover ~ main #welcome-section h1{
   display:block;
 
-  transform:scale(.61) translatey(-150px);
+  transform:scale(.461) translatey(-29vh);
 }
 
 h1{
@@ -419,9 +420,9 @@ visibility:hidden;
   width:100%;
   margin-left:0px;
   padding-top:50px;
-  perspective:900px;
+  perspective:1900px;
   padding-left:0px;
-  perspective-origin: top center ;
+  perspective-origin:top right;
   padding-bottom:calc(200px - 7vh);
 
 }
@@ -430,25 +431,25 @@ visibility:hidden;
 {
   position:relative;
   max-width:550px;
-  min-width:calc(250px + 05vw);
-   display:inline-block;
-  max-height:400px;
-  min-height:calc(15vh + 150px);
+  min-width:calc(200px + 015vw);
+   display:inline-flex;
+  max-height:50px;
+  min-height:calc(10vh + 200px);
   border:2px solid yellow;
   
- transform:rotatey(25deg) translatez(0px) scale(1);
+ transform:rotatey(25deg) translatez(-100px) scale(1);
  transition-property: all;
  transform-style:preserve-3d;
- margin-top:100px;
- margin-bottom:15vw;
+ margin-top:20vw;
+ margin-bottom:10vw;
  outline:2px solid green;
- margin-left:6.5vw;
+ margin-left:05vw;
  transition-delay:.4s;
 z-index:;
 margin-right:0vw;
-transform-origin:-100px;
+transform-origin:-500px;
 transition-duration:.53411s;
-transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.68)
+transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.168)
 
 
 
@@ -457,13 +458,13 @@ transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.68)
 
 .project-tile:nth-child(3):hover,.project-tile:nth-child(2):hover
  {
-   transform:rotatey(0deg) rotatex(0deg) translatey(-100px)translatez(50px) ;
+   transform:rotatey(0deg) rotatex(0deg) translatey(-100px)translatez(0px) ;
   transition-property:transform;
   transition-delay:unset;
-  transition-duration:.8531s;
-  transform-origin:-100px
+  transition-duration:.531s;
+  transform-origin:-500px
   ;
-  transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.68);
+  transition-timing-function:ease-out;
   cursor:pointer;
   outline-color:black;
  box-shadow:20px 20px 90px white;
@@ -473,12 +474,12 @@ transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.68)
 }
 
 .project-tile:nth-child(4):hover,.project-tile:nth-child(5):hover{
-  transform:rotatey(0deg) rotatex(0deg) translatey(-250px) translatez(50px);
+  transform:rotatey(0deg) rotatex(0deg) translatey(-150px) translatez(00px);
   transition-property:transform;
   transition-delay:unset;
-  transition-duration:.85435s;
-  transform-origin:-100px;
-  transition-timing-function:cubic-bezier(0, 1.02, 0.78, 1.58);
+  transition-duration:.5435s;
+  transform-origin:-500px;
+  transition-timing-function:ease-out;
     z-index:0;
       cursor:pointer;
 outline-color:black;
@@ -500,7 +501,7 @@ h3{
 }
 
 .project-tile:hover > .tile-label{
-transform:translatey(25px) translatex(-10px) translatez(50px);
+transform:translatey(25px) translatex(-10px) translatez(100px);
 transition-property:all;
 transition-duration:1s;
 
@@ -509,7 +510,7 @@ transition-duration:1s;
 
 .tile-label{
  min-width:40%;
-  height:15%;
+  height:10%;
   background:rgba(250, 250, 250, 0.9);
   margin:auto;
   position:absolute;
@@ -535,7 +536,7 @@ filter:unset
   text-decoration:none
 }
 #t-id-3{
-  background:url(./survey-form.png);
+  background:url(images/survey-form.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -543,7 +544,7 @@ filter:unset
 }
 
 #t-id-1{
-  background:url(./documentation-page.png);
+  background:url(images/documentation-page.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -551,7 +552,7 @@ filter:unset
 }
 
 #t-id-2{
-  background:url(./product-landing-page.png);
+  background:url(images/product-landing-page.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
@@ -559,7 +560,7 @@ filter:unset
   
 }
 #t-id-4{
-  background:url(./tribute-page.png);
+  background:url(images/tribute-page.png);
   background-position:center;
   background-size:100% 100%;
   background-repeat:no-repeat;
