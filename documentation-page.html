@@ -1,0 +1,220 @@
+ <!--DOCTYPE html --->
+<html>
+
+<head>
+    <link rel="stylesheet" href="./documentation.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technical Documentation page</title>
+</head>
+
+<body>
+  <div id="animation">
+    <h1>Python Documentation</h1>
+  </div>
+  <nav id="navbar">
+    <header>
+      <h2>Content</h2>
+    </header>
+    <ul>
+      <li><a id="a" class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Take_a_Dive">Take a Dive</a></li>
+
+      <li><a class="nav-link" href="#Using_Python_as_a_Calculator">Using Python as a Calculator</a></li>
+      <li><a class="nav-link" href="#Python_Strings">Python Strings</a></li>
+      <li><a class="nav-link" href="#Python_Lists">Python Lists</a></li>
+
+      <li><a class="nav-link" href="#First_Steps_Towards_Programming">First Steps Towards Programming</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <div id="invisible">
+
+    </div>
+    <section class="main-section" id="Introduction">
+      <header>
+        <h2>Introduction<h2>
+      </header>
+      <p>
+        Python is simple to use, but it is a real programming language, offering much more structure and support for large programs than shell scripts or batch files can offer. On the other hand, Python also offers much more error checking than C, and, being a very-high-level language, it has high-level data types built in, such as flexible arrays and dictionaries. Because of its more general data types Python is applicable to a much larger problem domain than Awk or even Perl, yet many things are at least as easy in Python as in those languages.
+      </p>
+      <p>
+        Python allows you to split your program into modules that can be reused in other Python programs. It comes with a large collection of standard modules that you can use as the basis of your programs — or as examples to start learning to program in Python. Some of these modules provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk.
+      </p>
+      <p>Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:</p>
+      <ul>
+        <li>the high-level data types allow you to express complex operations in a single statement;</li>
+        <li>statement grouping is done by indentation instead of beginning and ending brackets;
+
+        </li>
+        <li>no variable or argument declarations are necessary.
+
+        </li>
+      </ul>
+
+      <p>Python is extensible: if you know how to program in C it is easy to add a new built-in function or module to the interpreter, either to perform critical operations at maximum speed, or to link Python programs to libraries that may only be available in binary form (such as a vendor-specific graphics library). Once you are really hooked, you can link the Python interpreter into an application written in C and use it as an extension or command language for that application.
+
+        By the way, the language is named after the BBC show “Monty Python’s Flying Circus” and has nothing to do with reptiles. Making references to Monty Python skits in documentation is not only allowed, it is encouraged!</p>
+
+    </section>
+
+    <section class="main-section" id="Take_a_Dive">
+      <header>
+        <h2>Take a Dive</h2>
+      </header>
+      <h3>An Informal Introduction to Python</h3>
+      <p>In the following examples, input and output are distinguished by the presence or absence of prompts <span>(>>> and …)</span>: to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.
+
+        You can toggle the display of prompts and output by clicking on <span>>>> </span>in the upper-right corner of an example box. If you hide the prompts and output for an example, then you can easily copy and paste the input lines into your interpreter.
+
+        Many of the examples in this manual, even those entered at the interactive prompt, include comments. Comments in Python start with the hash character, #, and extend to the end of the physical line. A comment may appear at the start of a line or following whitespace or code, but not within a string literal. A hash character within a string literal is just a hash character. Since comments are to clarify code and are not interpreted by Python, they may be omitted when typing in examples.</p>
+      <div><code># this is the first comment
+          spam = 1 <br> # and this is the second comment
+          <br> # ... and now a third!
+          text = "# This is not a comment because it's inside quotes."</code></div>
+
+    </section>
+    <section class="main-section" id="Using_Python_as_a_Calculator">
+      <header>
+        <h2>Using Python as a Calculator</h2>
+      </header>
+      <p>Let’s try some simple Python commands. Start the interpreter and wait for the primary prompt, >>>. (It shouldn’t take long.)
+        <br>
+        The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example:
+      </p>
+      <div>
+        <code>
+          >>> 2 + 2
+          4
+          <br>
+          >>> 50 - 5*6
+          20<br>
+          >>> (50 - 5*6) / 4
+          5.0<br>
+          >>> 8 / 5 # division always returns a floating point number
+          1.6</code>
+      </div>
+      <br>
+      <p>The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float. We will see more about numeric types later in the tutorial.
+
+        Division (/) always returns a float. To do floor division and get an integer result (discarding any fractional result) you can use the // operator; to calculate the remainder you can use %:</p>
+      <div>
+        <code>>>> 17 / 3 # classic division returns a float
+          5.666666666666667<br>
+          >>><br>
+          >>> 17 // 3 # floor division discards the fractional part
+          5<br>
+          >>> 17 % 3 # the % operator returns the remainder of the division
+          2<br>
+          >>> 5 * 3 + 2 # floored quotient * divisor + remainder
+          17</code>
+      </div>
+
+    </section>
+    <section class="main-section" id="Python_Strings">
+      <header>
+        <h2>Python Strings</h2>
+      </header>
+      <p>Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to escape quotes:</p>
+      <div><code>
+          >>> 'spam eggs' # single quotes<br>
+          'spam eggs'<br>
+          >>> 'doesn\'t' # use \' to escape the single quote...<br>
+          "doesn't"<br>
+          >>> "doesn't" # ...or use double quotes instead<br>
+          "doesn't"<br>
+          >>> '"Yes," they said.'<br>
+          '"Yes," they said.'<br>
+          >>> "\"Yes,\" they said."<br>
+          '"Yes," they said.'<br>
+          >>> '"Isn\'t," they said.'<br>
+          '"Isn\'t," they said.'
+        </code></div>
+      <br>
+      <p>In the interactive interpreter, the output string is enclosed in quotes and special characters are escaped with backslashes. While this might sometimes look different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes. The print() function produces a more readable output, by omitting the enclosing quotes and by printing escaped and special characters:</p>
+      <div>
+        <code>>>> '"Isn\'t," they said.'
+          <br>
+          '"Isn\'t," they said.'<br>
+          >>> print('"Isn\'t," they said.')<br>
+          "Isn't," they said.<br>
+          >>> s = 'First line.\nSecond line.' # \n means newline<br>
+          >>> s # without print(), \n is included in the output<br>
+          'First line.\nSecond line.'<br>
+          >>> print(s) # with print(), \n produces a new line<br>
+          First line.<br>
+          Second line.</code>
+      </div>
+
+    </section>
+    <section class="main-section" id="Python_Lists">
+      <header>
+        <h2>Python Lists</h2>
+      </header>
+      <p>Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.</p>
+      <div><code>>>> squares = [1, 4, 9, 16, 25]<br>
+          >>> squares
+          [1, 4, 9, 16, 25]</code></div>
+      <br>
+      <p>Like strings (and all other built-in sequence types), lists can be indexed and sliced:</p>
+      <div><code>squares[0] # indexing returns the item
+          1<br>
+          >>> squares[-1]
+          25<br>
+          >>> squares[-3:] # slicing returns a new list<br>
+          [9, 16, 25]</code></div>
+
+    </section>
+    <section class="main-section" id="First_Steps_Towards_Programming">
+      <header>
+        <h2>First Steps Towards Programming</h2>
+      </header>
+      <p>Of course, we can use Python for more complicated tasks than adding two and two together. For instance, we can write an initial sub-sequence of the Fibonacci series as follows:</p>
+      <div><code>>>> # Fibonacci series:<br>
+          ... # the sum of two elements defines the next<br>
+          ... a, b = 0, 1<br>
+          >>> while a < 10:<br>
+            ... print(a)<br>
+            ... a, b = b, a+b<br>
+            ...<br>
+            0<br>
+            1<br>
+            1<br>
+            2<br>
+            3<br>
+            5<br>
+            8</code></div>
+      <p>This example introduces several new features.</p>
+      <ul>
+        <li>The first line contains a multiple assignment: the variables a and b simultaneously get the new values 0 and 1. On the last line this is used again, demonstrating that the expressions on the right-hand side are all evaluated first before any of the assignments take place. The right-hand side expressions are evaluated from the left to the right.</li>
+        <li>The while loop executes as long as the condition (here: a < 10) remains true. In Python, like in C, any non-zero integer value is true; zero is false. The condition may also be a string or list value, in fact any sequence; anything with a non-zero length is true, empty sequences are false. The test used in the example is a simple comparison. The standard comparison operators are written the same as in C: < (less than),> (greater than), == (equal to), <= (less than or equal to),>= (greater than or equal to) and != (not equal to).
+
+        </li>
+        <li>The body of the loop is indented: indentation is Python’s way of grouping statements. At the interactive prompt, you have to type a tab or space(s) for each indented line. In practice you will prepare more complicated input for Python with a text editor; all decent text editors have an auto-indent facility. When a compound statement is entered interactively, it must be followed by a blank line to indicate completion (since the parser cannot guess when you have typed the last line). Note that each line within a basic block must be indented by the same amount.</li>
+        <li>The print() function writes the value of the argument(s) it is given. It differs from just writing the expression you want to write (as we did earlier in the calculator examples) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely, like this:</li>
+
+      </ul>
+      <div>
+        <code>>>> i = 256*256<br>
+          >>> print('The value of i is', i)<br>
+          The value of i is 65536</code>
+      </div>
+      <p>The keyword argument end can be used to avoid the newline after the output, or end the output with a different string:</p>
+      <div><code>>>> a, b = 0, 1<br>
+          >>> while a < 1000:<br>
+            ... print(a, end=',')<br>
+            ... a, b = b, a+b<br>
+            ...<br>
+            0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,</code></div>
+    </section>
+    <br><br><br>
+    <footer>
+      <p class="p-f">Credit: <a href="https://python.org" target="_blank">Python</a></p>
+      <p class="p-f">&copy <a href="https://charlesnik.w3spaces.com/" target="_blank"> Charles Nik</a></p>
+    </footer>
+  </main>
+
+</body>
+
+</html>
