@@ -1,0 +1,202 @@
+ body
+{
+  display: block;
+padding:auto;
+  border:5px groove yellow;
+   margin:auto;
+   background: url(https://p2.piqsels.com/preview/906/233/85/marble-texture-white-pattern-thumbnail.jpg);
+}
+hr{
+  width:97vw;
+  margin-left:0.4%;
+  overflow: hidden;
+}
+
+figure,img{
+  position:relative;
+  display:block;
+  padding:2px;
+  margin:auto;
+  height:auto;
+  max-width:100%;
+  width:100%;
+}
+figure{
+  left:12px
+}
+img{
+  transform:scale(1)
+}
+#title,h1
+{
+  position:relative;
+  top:-20px;
+  margin: auto;
+  text-align: center;
+  font-size:3.3vw;
+  font-family: Georgia, "Sofia", cursive,             monospace;
+  text-shadow:05px 10px 5px gray;
+  margin-bottom:-20px
+}
+
+figcaption
+{
+  position: relative;
+  left: 30px;
+   font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
+
+#tribute-info 
+{
+  margin-left: 50px;
+}
+#hand-flag{
+  
+  display:block;
+  position:relative;
+  width:3vw;
+  height:auto;
+  left:260px;
+  top:27px;
+  animation-name:flag;
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+  z-index:200;
+}
+@media screen and (max-width:800px){
+  #block-quote{
+     position:relative;
+     min-width:100%;
+  }
+  #main_div .p-font-size,body h2, body h3, body,blockquote,p,body #footer{
+    font-size:14px
+  }
+  img{
+    position:relative;
+    display:block;
+    width:100%
+  }
+   h1{
+    position:relative;
+    top:3px;
+    display:block;
+    padding:auto;
+    margin:auto;
+  }}
+
+@media (max-width:1000px){
+  
+  #hand-flag{
+  display:block;
+  position:relative;
+   width:3vw;
+    height:auto;
+    top:6vh;
+    left:15vw}
+
+ 
+hr{  
+  width:93.4vw;
+  
+  }
+  
+}
+
+
+
+
+ @keyframes flag{50%{
+  
+  transform:scale(1.1) translatex(-10px) rotate(-20deg)}}
+
+.p-font-size{
+  text-align: justify;
+  font-size:20px;
+  line-height:30px;
+}
+
+media-query
+{
+  
+}
+
+a:hover
+{
+  
+  color:red;
+  text-decoration: none;
+}
+
+#body-footer
+{
+  display:block;
+  position: sticky;
+    margin:auto;
+  top:30px;
+  bottom:0px;
+  height: 30px;
+  text-align: center;
+  color:black;
+  background-image: linear-gradient(45deg,gray,white,white,white,white,white,gray);
+  font-weight:bold;
+  font-size: 16px;
+}
+
+u
+{
+  color: orangered
+}
+#main
+{
+  margin-right: 40px
+}
+#image:hover{
+  transform: scale(1.01)  translatey(-5px);
+  box-shadow: 15px 15px 15px gray
+}
+h1:hover{
+  color: orangered;
+  transform: scale(1.02 ) 
+}
+a{
+  color:blue;
+   text-decoration: none;
+}
+#block-quote{
+ 
+  position:relative;
+  height:auto;
+  width: 60%;
+  text-align:justify;
+  border-radius:35px;
+  display:block ;
+  font-size:bold;
+   background-color: #d9d9d9;
+  color:orangered;
+    font-style: italic;
+  font-size: 20px;
+  overflow:hidden
+}
+#block-quote:hover{
+   box-shadow: 10px 10px 50px gray;
+}
+#b-footer{
+  text-align: center;
+}
+#q-mark-top{
+  position:absolute;
+  font-size:36px;
+    font-weight: bold;
+  top:6px;
+  left:20px
+}
+#q-mark-bottom{
+  position:absolute;
+  font-size:36px;
+    font-weight: bold
+}
+h3{
+  font-size:25px
+}
